@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="css/aboutus .css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="icon" type="image/png" href="images/fav icon.png" sizes="64*64">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img src=" images/LOGOOO.jpeg" alt=""></a> <h3 style="text-align: left;">THE CAKE</h3>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories .html">Categories</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="aboutus .html">About us</a></li>
+            <li><a href="contact us .html">Contact us</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="L.S .html">Login/Signup</a></li>
+        </ul>
+    </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="parent">
+        <div class="banimg animate-slide">
+            <img src="images/onebrown.jpeg" alt="cake">
+        </div>
+        <div class="bancontent animate-slide">
+            <h1 style="font-family: 'Times New Roman', Times, serif;">About</h1> <br><br><br>
+            <h2 style="font-family: 'Times New Roman', Times, serif;">THE CAKE</h2> <br>
+            <p>Welcome to THE CAKE – where every celebration becomes sweeter! From beautifully crafted custom cakes to timeless flavors, we’re here to make your special moments unforgettable. Discover the story behind our passion for baking and why we love adding joy to your every occasion.</p>  <br>  
+            <button class="banbtn">CHECK OUR SERVICES</button>
+         </div>
+    </div>
+    <div class="box-two ">    
+        <!-- <h1></h1> -->
+        <div class="threeboxes animate-slide">
+            <h2>Foundation</h2>
+            <p>A love for baking and a passion for bringing joy led us to create "The Cake".  Since 1999, we've been crafting delicious cakes to celebrate sweetest moments.</p>
+        </div>
+        <div class="threeboxes animate-slide">
+            <h2>Vision</h2>
+            <p>To be the go-to bakery for creating custom cakes that inspire joy, creativity, and connection. We envision a world where every celebration is made sweeter with cakes.</p>
+        </div>
+        <div class="threeboxes animate-slide">
+            <h2>Mission</h2>
+            <p>To spread happiness, one slice at a time for our valuable and welcoming customers, by creating cakes that are as memorable as the moments they’re made for.</p>
+        </div> 
+    </div>
+    <div class="threeimgz animate-slide">
+        <h1 class="animate-slide">Visit more ...</h1>
+        <img class="animate-slide" src="images/m1.jpeg" alt="">
+        <img class="animate-slide" src="images/m2.jpeg" alt="">
+        <img class="animate-slide" src="images/m3.jpeg" alt=""> 
+        <button class="categ"><a href="categories .html">Explore Categories ></a></button> <br><br>
+    </div>
+    <div class="disclaimer animate-slide">
+        <p><b>DISCLAIMER: </b> Our cakes are crafted with utmost care and attention. However, please note that while we accommodate allergies, our facility processes ingredients like nuts, dairy, and gluten. We cannot guarantee an allergen-free environment.</p>
+    </div>
+
+    <br>
+
+    <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>the cake</h4>
+                  <ul>
+                      <li><a href="index.html">home</a></li>
+                      <li><a href="aboutus .html">about us</a></li>
+                      <li><a href="contact us .html">contact us</a></li>
+                      <li><a href="help.html">get help</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>our categories</h4>
+                  <ul>
+                      <li><a href="classiccakes .html">classic cakes</a></li>
+                      <li><a href="fruitbased cakes.html">fruit based cakes</a></li>
+                      <li><a href="chocolatecakes .html">chocolate cakes</a></li>
+                      <li><a href="themecakes.html">theme cakes</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>important links</h4>
+                  <ul>
+                      <li><a href="L.S .html">login/signup</a></li>
+                      <li><a href="purchaseform .html">purchase form</a></li>
+                      <li><a href="sitemap .html">site map</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>follow us</h4>
+                  <div class="social-links">
+                      <a href="https://www.facebook.com/AptechMetro/"><i class="fab fa-facebook-f"></i></a>
+                      <a href="#"><i class="fab fa-twitter"></i></a> 
+                      <a href="https://www.instagram.com/aptechmetro/?hl=en"><i class="fab fa-instagram"></i></a>
+                      <a href="https://pk.linkedin.com/company/aptechmetro"><i class="fab fa-linkedin-in"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+  
+</body>
+</html>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const elements = document.querySelectorAll('.animate-slide');
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-visible');
+          } else {
+            entry.target.classList.remove('animate-visible');
+          }
+        });
+      }, { threshold: 0.1 }); // Adjust threshold as needed
+  
+      elements.forEach(el => observer.observe(el));
+    });
+  </script>
+  

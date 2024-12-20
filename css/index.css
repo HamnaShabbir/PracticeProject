@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: "poppins" , sans-serif;
+}
+:root{
+    --main-color:#008148;
+    --second-color: #1e3932;
+}
+section{
+    padding: 50px 10%;
+}
+*::selection{
+    color: #fff;
+    background: var(--main-color);
+}
+img{
+    width: 100%;
+}
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    border-radius: 50%;
+   
+}
+
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.navbar a:hover{
+    color: var(--main-color);
+
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+.home{
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #ebdbc8;
+    gap: 1rem;
+}
+.home-text{
+    flex: 1 1 17rem;
+}
+.home-img{
+    flex: 1 1 17rem;
+
+}
+.home-img img{
+    animation: animate 3s linear infinite;
+}
+@keyframes animate {
+    0% {
+        transform: translate(-11px, 0);
+    }
+    50% {
+        transform: translate(-0px, -11px);
+    }
+    100% {
+        transform: translate(-11px, 0);
+    }
+}
+
+.home-text span{
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--second-color);
+
+}
+.home-text h1{
+    font-size: 3.2rem;
+    color: var(--main-color);
+    font-weight: bolder;
+}
+.home-text h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--second-color);
+    margin: 0.5rem 0 1.4rem;
+    text-transform: uppercase;
+}
+.btn{
+    padding: 7px 16px ;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+.btn:hover{
+    color: #fff;
+    background: var(--second-color);
+}
+
+
+
+  body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #8c5252bd;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: whitesmoke;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: brown;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: whitesmoke;
+	text-decoration: none;
+	font-weight: 300;
+	color: whitesmoke;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: whitesmoke;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color:whitesmoke ;
+}
+
+/*responsive*/
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+}
+
+
+
+
+
+
+/* Existing CSS is untouched */
+
+/* Additional Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    .navbar a {
+        padding: 10px 15px;
+    }
+
+    .home-text h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .cs-rv {
+        width: 45%; /* Adjust customer review boxes */
+    }
+
+    .main-div {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .contact-box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px 5%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        display: none; /* Initially hidden, can be toggled via JavaScript */
+    }
+
+    #menu-icon {
+        display: block; /* Show menu icon on smaller screens */
+    }
+
+    .home {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .home-text h1 {
+        font-size: 2rem;
+    }
+
+    .threecards {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .contact-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .one {
+        flex-direction: column;
+    }
+
+    .one img {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .cs-rv {
+        width: 100%; /* Full width for reviews on smaller screens */
+    }
+
+    .navbar.active {
+        display: flex; /* Show menu when active */
+    }
+}
+
+@media (max-width: 480px) {
+    header h3 {
+        font-size: 1.2rem;
+    }
+
+    .home-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-text h2 {
+        font-size: 1.2rem;
+    }
+
+    .btn {
+        padding: 5px 12px;
+        font-size: 0.9rem;
+    }
+
+    .cs-rv {
+        padding: 10px;
+    }
+
+    .one img {
+        width: 70%;
+    }
+
+    .navbar a {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+

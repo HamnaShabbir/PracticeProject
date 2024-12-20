@@ -1,0 +1,630 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+:root {
+  --primary: #ec994b;
+  --white: #ffffff;
+  --bg: #f5f5f5;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+@media (min-width: 1440px) {
+  html {
+    zoom: 1.5;
+  }
+}
+
+@media (min-width: 2560px) {
+  html {
+    zoom: 1.7;
+  }
+}
+
+@media (min-width: 3860px) {
+  html {
+    zoom: 2.5;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 1.3rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background: #797979;
+  transition: all 0.5s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #222224;
+}
+
+::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+
+body {
+  font-size: 1.6rem;
+  background: var(--bg);
+}
+
+.container {
+  max-width: 124rem;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section-heading {
+  font-size: 3rem;
+  color: var(--primary);
+  padding: 2rem 0;
+}
+
+#tranding {
+  padding: 4rem 0;
+}
+
+@media (max-width:1440px) {
+  #tranding {
+    padding: 7rem 0;
+  }
+}
+
+#tranding .tranding-slider {
+  height: 52rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  #tranding .tranding-slider {
+    height: 45rem;
+  }
+}
+
+.tranding-slide {
+  width: 37rem;
+  height: 42rem;
+  position: relative;
+}
+
+@media (max-width:500px) {
+  .tranding-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+  .tranding-slide .tranding-slide-img img {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+}
+
+.tranding-slide .tranding-slide-img img {
+  width: 37rem;
+  height: 42rem;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+.tranding-slide .tranding-slide-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.tranding-slide-content .food-price {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  color: var(--white);
+}
+
+.tranding-slide-content .tranding-slide-content-bottom {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+  color: var(--white);
+}
+
+.food-rating {
+  padding-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.rating ion-icon {
+  color: var(--primary);
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.tranding-slider-control {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tranding-slider-control .swiper-button-next {
+  left: 58% !important;
+  transform: translateX(-58%) !important;
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 70% !important;
+    transform: translateX(-70%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-next {
+    left: 80% !important;
+    transform: translateX(-80%) !important;
+  }
+}
+
+@media (max-width:990px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 30% !important;
+    transform: translateX(-30%) !important;
+  }
+}
+
+@media (max-width:450px) {
+  .tranding-slider-control .swiper-button-prev {
+    left: 20% !important;
+    transform: translateX(-20%) !important;
+  }
+}
+
+.tranding-slider-control .slider-arrow {
+  background: var(--white);
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  left: 42%;
+  transform: translateX(-42%);
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .slider-arrow ion-icon {
+  font-size: 2rem;
+  color: #222224;
+}
+
+.tranding-slider-control .slider-arrow::after {
+  content: '';
+}
+
+.tranding-slider-control .swiper-pagination {
+  position: relative;
+  width: 15rem;
+  bottom: 1rem;
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.tranding-slider-control .swiper-pagination .swiper-pagination-bullet-active {
+  background: var(--primary);
+}
+
+
+
+
+
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    box-shadow: 0 4px 41px rgb(14 55 54 / 14%);
+    padding: 15px 10%;
+    transition: 0.2s;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    width: 50px;
+    border-radius: 50%;
+   
+}
+
+.navbar{
+    display: flex;
+}
+.navbar a{
+    font-size: 1rem;
+    padding: 11px 20px;
+    color: var(--second-color);
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.navbar a:hover{
+    color: var(--main-color);
+
+}
+#menu-icon{
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1001;
+    display: none;
+}
+
+
+:root{
+    --main-color:#008148;
+    --second-color: #1e3932;
+}
+section{
+    padding: 50px 10%;
+}
+*::selection{
+    color: #fff;
+    background: var(--main-color);
+}
+img{
+    width: 100%;}
+
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 2rem;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: "poppins" , sans-serif;
+}
+
+
+
+
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color: #8c5252bd;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: whitesmoke;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: brown;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: whitesmoke;
+	text-decoration: none;
+	font-weight: 300;
+	color: whitesmoke;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: whitesmoke;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color:whitesmoke ;
+}
+
+.disclaimer{
+
+background-color: #884c312a;
+padding: 7px;
+margin-top: 15px;
+font-size: large;
+
+
+}
+
+.disclaimer p{
+
+font-weight: 40px;
+
+}
+
+
+@media (max-width: 1200px) {
+    /* Adjust padding and font sizes for medium screens */
+    .container {
+      padding: 0 2rem;
+    }
+  
+    .section-heading {
+      font-size: 2.5rem;
+    }
+  
+    header {
+      padding: 15px 5%;
+    }
+  
+    .navbar a {
+      font-size: 0.9rem;
+      padding: 10px 15px;
+    }
+  
+    .footer-col {
+      width: 50%;
+      padding: 0 10px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    /* Adjust layout for tablets and smaller screens */
+    .container {
+      padding: 0 1.5rem;
+    }
+  
+    .section-heading {
+      font-size: 2rem;
+    }
+  
+    header {
+      padding: 15px 3%;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar a {
+      font-size: 1rem;
+      padding: 8px 12px;
+    }
+  
+    .footer-col {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .tranding-slider {
+      height: 40rem;
+    }
+  
+    .tranding-slide {
+      width: 30rem;
+      height: 36rem;
+    }
+  
+    .tranding-slider-control .swiper-button-next {
+      left: 75% !important;
+    }
+  
+    .tranding-slider-control .swiper-button-prev {
+      left: 25% !important;
+    }
+  
+    .disclaimer {
+      font-size: 1.4rem;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Adjust layout for small tablets and large phones */
+    .container {
+      padding: 0 1rem;
+    }
+  
+    .section-heading {
+      font-size: 1.8rem;
+    }
+  
+    header {
+      padding: 15px 2%;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar a {
+      font-size: 1rem;
+      padding: 8px 10px;
+    }
+  
+    .footer-col {
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  
+    .tranding-slider {
+      height: 35rem;
+    }
+  
+    .tranding-slide {
+      width: 28rem;
+      height: 34rem;
+    }
+  
+    .tranding-slider-control .swiper-button-next {
+      left: 80% !important;
+    }
+  
+    .tranding-slider-control .swiper-button-prev {
+      left: 20% !important;
+    }
+  
+    .disclaimer {
+      font-size: 1.3rem;
+      padding: 8px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Adjust layout for very small screens like mobile phones */
+    .container {
+      padding: 0 1rem;
+    }
+  
+    .section-heading {
+      font-size: 1.6rem;
+    }
+  
+    header {
+      padding: 10px 5%;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar a {
+      font-size: 0.9rem;
+      padding: 8px 10px;
+    }
+  
+    .footer-col {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .tranding-slider {
+      height: 30rem;
+    }
+  
+    .tranding-slide {
+      width: 24rem;
+      height: 28rem;
+    }
+  
+    .tranding-slider-control .swiper-button-next {
+      left: 85% !important;
+    }
+  
+    .tranding-slider-control .swiper-button-prev {
+      left: 15% !important;
+    }
+  
+    .disclaimer {
+      font-size: 1.2rem;
+      padding: 6px;
+    }
+  }
+  
+  @media (max-width: 450px) {
+    /* For very small screens like portrait mobile */
+    header {
+      padding: 10px 3%;
+    }
+  
+    .navbar a {
+      font-size: 0.8rem;
+      padding: 6px 8px;
+    }
+  
+    .tranding-slider {
+      height: 28rem;
+    }
+  
+    .tranding-slide {
+      width: 22rem;
+      height: 26rem;
+    }
+  
+    .tranding-slider-control .swiper-button-next {
+      left: 90% !important;
+    }
+  
+    .tranding-slider-control .swiper-button-prev {
+      left: 10% !important;
+    }
+  
+    .disclaimer {
+      font-size: 1.1rem;
+      padding: 5px;
+    }
+  }
+  

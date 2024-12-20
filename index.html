@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cake</title>
+    <link rel="icon" type="image/png" href="images/fav icon.png" sizes="64*64">
+    <link rel="stylesheet" href=" css/index.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<style>
+
+
+  @media (max-width: 768px) {
+    .main-div,
+    .threecards,
+    .one,
+    .historytwo,
+    .about {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .cs-rv,
+    .contact-box,
+    .home-img img,
+    .threecards .contact-box {
+      width: 80%; /* Adjust width for better fit */
+      margin: 10px 0; /* Add vertical spacing */
+    }
+
+    .home-img img {
+      width: 90%;
+      margin-left: 0;
+    }
+
+    .heading h1 {
+      font-size: 1.5em; /* Adjust heading size */
+    }
+
+    .history img,
+    .about img {
+      width: 70%; /* Resize images */
+      margin: 10px 0;
+    }
+
+    .categ {
+      margin-left: 0;
+      width: 90%; /* Full-width button */
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .home-text h1,
+    .heading h1 {
+      font-size: 1.2em;
+    }
+
+    .home-text h2,
+    .cs-rv p,
+    .contact-box p {
+      font-size: 1em;
+    }
+
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar li {
+      margin: 5px 0;
+    }
+
+    .home-img img {
+      width: 100%;
+    }
+
+    .one img {
+      width: 60%; /* Smaller images */
+    }
+  }
+
+
+    .cs-rv img{
+        width: 40%;
+        border-radius: 50%;
+
+    }
+    .cs-rv{
+        margin-left: 2%;
+        padding: 2%;
+        /* height: 70%; */
+        width: 20%;
+        background-color: beige;
+
+    }
+    .main-div{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .heading h1{
+        text-align: center;
+        color: brown;
+        margin-bottom: 3%;
+    }
+    .threecards{
+
+width: 92%;
+height: 350px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+margin-left: 30px;
+border-radius: 25px;
+
+}
+
+.contact-box{
+
+width: 28%;
+height: 230px;
+display: flex;
+justify-content: space-evenly;
+align-items: normal;
+flex-direction: column;
+border-radius: 15px;
+
+}
+
+.contact-box p{
+font-weight: bold;
+font-size: large;
+}
+@keyframes slide-down {
+    0% {
+      transform: translateY(-30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-slide {
+    opacity: 0; 
+    transform: translateY(-30px);
+    transition: transform 1.7s ease-out, opacity 0.6s ease-out;
+  }
+  
+  .animate-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .one{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .one img{
+    width: 20%;
+  }
+
+
+
+
+</style>
+
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><img src=" images/LOGOOO.jpeg" alt=""></a> <h3 style="text-align: left;">THE CAKE</h3>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories .html">Categories</a></li>
+            <li><a href="accessories.html">Accessories</a></li>
+            <li><a href="aboutus .html">About us</a></li>
+            <li><a href="contact us .html">Contact us</a></li>
+            <li><a href="help.html">Help</a></li>
+            <li><a href="L.S .html">Login/Signup</a></li>
+        </ul>
+    </header>
+
+    <section class="home" style="background-color: #ffe7e2;" id="home">
+        <div  class="home-text">
+            <span>Welcome to</span>
+            <h1>THE CAKE</h1>
+            <h2>crafting sweetness for <br> every moment </h2>
+            <a href="purchaseform .html" class="btn">Order Now</a>
+        </div>
+        <div  class="home-img">
+            <img style="width: 80%; border-radius: 50%; margin-left: 8%; margin-top: 10%;" src=" images/BANNER-removebg-preview.png" alt="">
+        </div>
+    </section>
+
+<br><br>
+<div class="homeone animate-slide" >
+    <h1 style="margin-left: 5%; color: brown;">CAKES WE OFFER</h1> <br>
+<p style="margin-left: 5%; font-size: x-large;">From elegant wedding cakes to fun-themed designs, explore our delightful creations crafted for every occasion!</p>
+<br> <br>
+    <figure style="display: flex; justify-content: space-evenly;">
+        <img src=" images/oooo.png" style="width: 20%; animation: animate 3s linear infinite;" class="hello" alt="">
+        <img src=" images/pppp.png" style="width: 20%; animation: animate 3s linear infinite;" class="hello" alt="">
+        <img src=" images/ccccc.png" style="width: 20%; animation: animate 3s linear infinite;"class="hello" alt="">
+        <img src=" images/ddddd.png" style="width: 20%; animation: animate 3s linear infinite;"class="hello" alt="">
+    </figure>
+    <button class="categ" style=" margin-left: 85%; background-color: rgba(141, 85, 85, 0.747);
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    "><a style="  text-decoration: none;
+    color: white;" href="categories .html">Explore Categories ></a></button> <br><br>
+
+</div>
+<br> <br> <br> 
+
+ <center>
+    <hr style="width: 85%; size: 5%; color: brown; text-align: center;">
+    <hr style="width: 80%; size: 2%; color: brown; text-align: center;">
+    </center> <br> <br>
+ <center>
+<div class="history animate-slide" style="width: 95%; background-color: rgb(240, 166, 166);">
+    <div class="historytwo" style="display: flex; justify-content: space-evenly; align-items: center;">
+        <img style="margin-left: 4%; margin-bottom: 3%; margin-top: 3%;" src=" images/Elegant Pastel Patisserie.jpeg" alt="">
+        <div>
+            <h2>Our Sweet Journey</h2> <br>
+    <p style="margin-right: 6%; margin-left: 6%;">     
+     Our story began with a love for baking and a desire to create <b> unforgettable moments.</b> From a humble kitchen corner to a thriving cake shop, we’ve always believed that every occasion deserves a <b> centerpiece as unique</b> as the memories being made. Over the years, we’ve perfected our craft, blending <b> artistry</b> with <b>the finest ingredients </b> to design cakes that don’t just look beautiful but taste extraordinary. Whether it’s a  grand celebration </b> or a quiet indulgence, our cakes are baked with care, creativity, and a sprinkle of magic. Thank you for letting us be part of your <b> sweetest moments! </b></p>
+    </div>
+    </div>
+</div>
+</center> 
+<br> <br>
+<center>
+    <hr style="width: 85%; size: 5%; color: brown; text-align: center;">
+    <hr style="width: 80%; size: 2%; color: brown; text-align: center;">
+    </center> <br>
+<br> <br>  <br>  <br> <br> <br>
+<center>
+<div class="abuttt animate-slide" style="width: 95%;">
+    <h2 style="margin-bottom: -7%; margin-right: 28%;">About Us</h2> 
+    <div class="about animate-slide" style="display: flex; justify-content: space-evenly; align-items: center;" >
+    <p style="font-size: large;"> Welcome to THE CAKE – where every celebration becomes sweeter! From beautifully crafted custom cakes to timeless flavors, we’re here to make your special moments unforgettable. Discover the story behind our passion for baking and why we love adding joy to your every occasion. <button class="categ" style=" margin-left: 85%; background-color: rgba(141, 85, 85, 0.747);
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 25px;
+    "><a style="  text-decoration: none;
+    color: white;" href="aboutus .html">See Aboutus ></a></button></p>   
+    <img src=" images/eee-removebg-preview.png" style="border-radius: 50%; width: 25%; margin-left: 4%; margin-bottom: 10%;">
+</div>
+</div>
+<center>
+    <hr style="width: 85%; size: 5%; color: brown; text-align: center;">
+    <hr style="width: 80%; size: 2%; color: brown; text-align: center;">
+    </center> <br><br><br>
+
+<div class="heading animate-slide">
+    <h1>Our Valued Customers :)</h1>
+</div>
+
+
+
+
+<div class="main-div animate-slide">
+    <div class="cs-rv" style="height: 40%;" >
+        <center><img src=" images/rvw1.png" alt=""></center> <br>
+        <center><p>
+            <h3>Tayyab Raza</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+             </div>
+            "The cake was stunning and tasted heavenly. The design was exactly what I wanted. Tasha's Creation truly delivers perfection!"</p></center>
+    </div>
+    <br>
+    <div class="cs-rv" style="height: 40%;" >
+        <center><img src=" images/rvw2.jpeg" alt=""></center> <br>
+        <center><p>
+            <h3>Taliya Murad</h3>
+             <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+         </div>
+            Best Cakes in Town!
+            "I've ordered multiple times, and they never disappoint. Fresh, flavorful, and always beautifully crafted!"</p></center>
+    </div>
+    <br>
+    <div class="cs-rv" style="height: 40%;" >
+        <center><img src=" images/rvw3.png" alt=""></center> <br>
+        <center><p>
+            <h3>Huma Fatima</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+             </div>
+            "The team at Tasha's Creation was so accommodating with my requests. The cake was the star of the party!"
+            
+            </p></center>
+    </div>
+    <br>
+    <div class="cs-rv" style="height: 40%;" >
+        <center><img src=" images/rvw4.png" alt=""></center> <br>
+        <center><p>
+            <h3>Maya Sheikh</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+             </div>Exceeded Expectations!
+        "The cake was gorgeous, and it also had the perfect balance of sweetness and design. Loved it!"</p></center>
+    </div>
+    <br>
+</div>
+<br> <br> <br>
+
+
+<center>
+    <hr style="width: 85%; size: 5%; color: brown; text-align: center;">
+    <hr style="width: 80%; size: 2%; color: brown; text-align: center;">
+    </center> <br>  <br>
+
+
+<h2 style="text-align: center; ">Our Cake Accessories</h2> <br>
+
+
+    <div class="one">
+        <img src=" images/box2 (1).jpeg" alt="">
+        <img src=" images/box1 (3).jpeg" alt="">
+        <img src=" images/can1 (5).jpeg" alt="">
+    </div>
+
+    <button class="categ" style=" margin-left: 85%; background-color: rgba(141, 85, 85, 0.747);
+    color: white;
+    padding: 10px;
+    border: none;
+    margin-top: 20px;
+    "><a style="  text-decoration: none;
+    color: white;" href="accessories.html">Explore Accessories ></a></button> <br><br>
+
+<br>
+    <center>
+        <hr style="width: 85%; size: 5%; color: brown; text-align: center;">
+        <hr style="width: 80%; size: 2%; color: brown; text-align: center;">
+        </center> <br> 
+
+
+
+
+
+
+
+
+
+
+
+<center>
+    <div class="threecards animate-slide">
+        <div class="contact-box" style=" background-color: 	#F9CCCA ">
+            <i class="fa-solid fa-phone"> <span class="phone-number">(021-735499621)</span> </i>  
+            <p class="description">Feel free to call us anytime. <br> We're just a ring away!</p>
+        </div>
+        <div class="contact-box" style="background-color: #FFB7C5">
+            <i class="fa-solid fa-envelope"> <span class="phone-number">thecakebakery@gmail.com</span> </i>  
+            <p class="description">Got questions? Drop us a line <br> and we’ll get back to you soon..</p>
+        </div>
+        <div class="contact-box" style=" background-color: #F2BDCD">
+            <i class="fa-solid fa-location-dot"><span class="phone-number">Aptech metro "the cake"</span> </i>
+            <p class="description">Visit us at our shop. We’re excited to welcome you!.</p>
+        </div>
+    </div>
+    </center>
+    <button class="categ" style=" margin-left: 85%; background-color: rgba(141, 85, 85, 0.747);
+    color: white;
+    padding: 10px;
+    border: none;
+
+    "><a style="  text-decoration: none;
+    color: white;" href="contact us .html">Contact Us ></a></button></p>
+
+ 
+
+<br><br> <br>
+
+
+
+
+
+
+
+
+
+
+<footer style="text-align: left;" class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h4>the cake</h4>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="aboutus .html">about us</a></li>
+                    <li><a href="contact us .html">contact us</a></li>
+                    <li><a href="help.html">get help</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>our categories</h4>
+                <ul>
+                    <li><a href="classiccakes .html">classic cakes</a></li>
+                    <li><a href="fruitbased cakes.html">fruit based cakes</a></li>
+                    <li><a href="chocolatecakes .html">chocolate cakes</a></li>
+                    <li><a href="themecakes.html">theme cakes</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>important links</h4>
+                <ul>
+                    <li><a href="L.S .html">login/signup</a></li>
+                    <li><a href="purchaseform .html">purchase form</a></li>
+                    <li><a href="sitemap .html">site map</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/AptechMetro/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a> 
+                    <a href="https://www.instagram.com/aptechmetro/?hl=en"><i class="fab fa-instagram"></i></a>
+                    <a href="https://pk.linkedin.com/company/aptechmetro"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+   
+</body>
+</html>    
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const elements = document.querySelectorAll('.animate-slide');
+  
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('animate-visible');
+          } else {
+            entry.target.classList.remove('animate-visible');
+          }
+        });
+      }, { threshold: 0.1 }); // Adjust threshold as needed
+  
+      elements.forEach(el => observer.observe(el));
+    });
+
+
+
+
+
+
+
+
+
+  </script>
+  
